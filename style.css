@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+     font-family: "Smooch Sans", sans-serif;
+}
+body{
+    background: #ffd9ea;
+    background: radial-gradient(circle, rgb(245, 222, 232) 0%, rgb(211, 228, 248) 100%);
+}
+.heading{
+    height: 15vh;
+    width: 100%;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 600;
+    font-size: 8vh;
+    color: rgb(243, 248, 244);
+    background: #020024;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;   /* center all choices horizontally */
+    align-items: center;
+    gap: 40px;                  /* add spacing between choices */
+    margin-top: 10vh;            /* optional: spacing from heading */
+}
+
+.choice {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* ensures image fits nicely */
+}
+
+.choice:hover{
+    
+    z-index: 0;
+    box-shadow: 10px 0 10px rgb(41, 63, 33),-10px 0 10px rgb(4, 39, 13);
+    border: 1.5px solid black;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 8vh;
+    gap: 15vw;
+}
+#user-score,#comp-score{
+    font-size: 3.5rem;
+}
+.msg-container{
+    margin-top: 10vh;
+}
+#msg{
+    display: inline;
+    padding: 1rem;
+    background-color: #0a0a0a;
+    color: white;
+    font-size: 5vh;
+    border-radius: 1rem;
+    font-weight: 500;
+}
