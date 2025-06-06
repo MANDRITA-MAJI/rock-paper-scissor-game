@@ -17,6 +17,7 @@ const gemCompChoice = () =>{
 const drawGame= ()=>{
    console.log("the game was draw");
    msg.innerText = `The game was draw!`;
+    
 }
 
 const showWinner=(userWin,compChoice)=>{
@@ -24,11 +25,13 @@ const showWinner=(userWin,compChoice)=>{
         userScore++;
         userScoreDisplay.innerText = `${userScore}`
         msg.innerText = `You won !!`;
+        msg.style.backgroundColor = "green";
     }
     else{
         compScore++;
         compScoreDisplay.innerText = `${compScore}`
         msg.innerText = `Opps! You lost to ${compChoice}`
+         msg.style.backgroundColor = "red";
     }
 }
 
